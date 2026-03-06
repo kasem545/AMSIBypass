@@ -1,4 +1,4 @@
-# AMSI.fail CLI
+# AMSIBypass
 
 A command-line tool that generates obfuscated AMSI (Antimalware Scan Interface) bypass payloads for authorized security testing and research.
 
@@ -43,14 +43,9 @@ Educational and research purposes only. Misuse may violate laws and regulations.
 
 #### Windows
 
-**Simple Build:**
+** Build (with verification):**
 ```cmd
-build-simple.bat
-```
-
-**Comprehensive Build (with verification):**
-```cmd
-build-standalone.bat
+build.bat
 ```
 
 #### Linux / macOS
@@ -160,20 +155,6 @@ Each payload undergoes a comprehensive obfuscation pipeline:
 
 This multi-layer approach ensures every payload is unique and evades signature-based detection.
 
----
-
-## Verification
-
-After building, you can verify the standalone executable:
-
-```cmd
-verify-standalone.bat
-```
-
-This checks:
-- ✅ File exists and has correct size (~60-70 MB for standalone)
-- ✅ No DLL dependencies (true single-file executable)
-- ✅ Executable runs successfully
 
 ---
 
